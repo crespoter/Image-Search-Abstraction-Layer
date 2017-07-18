@@ -1,0 +1,15 @@
+﻿head
+    title Image search abstraction layer
+    link(href='stylesheet/main.css',rel='stylesheet',type='text/css')
+body
+    h1(class='heading') IMAGE SEARCH ABSTRACTION LAYER
+    p(class = 'introduction') This application is build over the google images api for quicker access of image searches using another application
+    h3(class = 'heading-use') HOW TO USE 
+    ul
+        li
+            p(class='send-data') To search for images pass the search query to the index url in the following syntax . Additionaly an offset parameter can be passed to paginate the results<br/>
+            code homeurl/search/:searchquery
+            p(class ='example') Example : 
+            code localhost:3000/search/crespoter
+        li
+            p(class='access-latest') To know the latest searches performed access homeurl/latestsearches
