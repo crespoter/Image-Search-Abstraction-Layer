@@ -6,7 +6,7 @@ MongoClient.connect("mongodb://databaseuser:databasepassword@ds161012.mlab.com:6
     if (err)
         console.log(err);
     db = database;
-    app.listen(/*process.env.PORT |*/ 3000, () => {
+    app.listen(process.env.PORT, () => {
         console.log("Server started");
     })
 });
